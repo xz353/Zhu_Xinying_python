@@ -2,7 +2,9 @@
 """
 @author: xinying zhu
 """
-
+#Overall Comments: Generally speaking, very good work except some detail mistakes. Good calculation and method ! But please 
+# try to comment yourself as detail as possible. For the convenience of other people and also for yourself. I have used
+# 'Comment' before all my comments, and you may have a look. If any misunderstanding happen, please email me.
 """
 1.Define a function max()that takes two numbers as arguments and returns the 
 largest of them.
@@ -92,7 +94,7 @@ def sum(n):
     for number in n: #use for loop
         total = total + number#add each number to next number
     return total#get a new total, then return to total
-
+#Comment: it would be better to say you add numbers one by one to total
 sum([1, 2, 3, 4, 5])
 
 def multiply(m):
@@ -112,14 +114,14 @@ def reverse(text):
     for i in range(len(text)): #use for loop
         a = a + text[l - i - 1] #add the character to a
     return a#return to the reversal of a string
-
+#Comment: It would be better to explain your a = a + text[l-i-1] as using revesal index to get the reversal version of text.
 reverse('I am testing')   
 
 """
 8.Define a function is_palindrome()that recognizes palindromes. 
 """
 def is_palindrome(word):
-    for i in range(0, len(word)): #iterate each i in range, use for loop
+    for i in range(0, len(word)): #iterate each i in range, use for loop #Comment: You can simplify as range(len(word))
         if word[i] == word[-(i + 1)]:#if converted string and reversed string
         #are same
             continue #true
@@ -134,12 +136,12 @@ is_palindrome('radar')
 xand a list of values a, and returns True if xis a member of a, 
 Falseotherwise.
 """
-def is_member(alist, a):
+def is_member(alist, a):#Comment: Why not change the position of the arguments? is_member(a, alist):
     for i in a: #use for loop
         if i == alist: #if i equals to a 
             return True#return true
         return False#after a loop, none is equal to i
-
+#Comment: You can improve this function with in. For example: if a in alist: return True
 is_member(1,[1,2,3,4])
             
     
@@ -153,7 +155,9 @@ def overlapping(inputlist1, inputlist2):
             if inputlist1[i] == inputlist2[j]:#compare list1 and list2
                 return True #two lists have have one pair is same
     return False #two lists have no common member
-
+#Comment: You can improve this function with in, example: for i in inputlist1:
+                                                                  #if i in inputlist2 
+                                                                  #return True
 overlapping(inputlist1 = ['11', '22', '33'], inputlist2 = ['11', '44', '55'])
 
 """
@@ -206,7 +210,7 @@ def map_to_lengths_for(words):
     for word in words:#use for loop
         lengths. append (len(word))#map the list of words into a list of integers
         return lengths# return to a new length
-
+#Comment: It would be better to explain lengths.append more
 map_to_lengths_for(['app','math','world'])
 
 """
@@ -234,7 +238,8 @@ def filter_long_words(string, number):
     return listwords#return the list of words that are longer than n
     
 filter_long_words(['paper', 'note', 'top', 'python','cool'],4)
-
+#Comment: It is not correct to write the listwords=[] within the for loop, because every time you clear up the listwords. So
+#        it will only show the result of final input.
 
 
     
