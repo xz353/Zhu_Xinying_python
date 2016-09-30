@@ -2,6 +2,9 @@
 """
 @author: xinying zhu
 """
+#You grades are influended by your format, please refer to the format that Professor G has shown during the lecture. The content
+#we expect between """ are questions you are trying to solve, your input parameters and your output. Once you corrected
+#them, I am more than happy to give back your mark!
 #Overall Comments: Generally speaking, very good work except some detail mistakes. Good calculation and method ! But please 
 # try to comment yourself as detail as possible. For the convenience of other people and also for yourself. I have used
 # 'Comment' before all my comments, and you may have a look. If any misunderstanding happen, please email me.
