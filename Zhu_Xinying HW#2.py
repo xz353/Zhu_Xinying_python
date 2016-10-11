@@ -4,6 +4,10 @@ Created on Mon Sep 19 01:40:25 2016
 
 @author: Xinying
 """
+
+#Overall Comment: Correct your format according to professor G's format. Once you correct them, I am more than happy to give
+#                back your grades. For the content, I think your logic and comments showed your understanding of the code and
+#                what you are trying to solve. Good exercise!
 ###problem 1###
 """
 write a function translate()that takes a list of English words and returns 
