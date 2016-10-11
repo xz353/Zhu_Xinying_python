@@ -4,6 +4,10 @@ Created on Thu Sep 29 14:28:52 2016
 
 @author: Xinying
 """
+
+#Overall Comment: Try to explain what kind of questions you are trying to solve first and then write the code. And also you need
+#                 to add column names to your data so that you can use them as legends in the plots. For the part you have written
+#                 showed your understanding which is very good.
 #question1-3#
 import pandas as pd #import panda firstly from the panda package
 data=pd.read_table('/Users/Xinying/Desktop/iris.data.txt',header=0,sep = ',')
