@@ -16,6 +16,8 @@ def print_max(a, b):
     """
     Define a function max()that takes two numbers as arguments and returns the 
     largest of them.
+    Parameters: the real numbers
+    Return: the larger of two numbers. if they are the same, it returns that number.
     """
     if a > b:
     #the first condition: a is greater than b
@@ -39,8 +41,10 @@ returns the largest of them.
 """
 def print_max_of_three(a, b,c):
     """
-    Define a function max_of_three()that takes three numbers as arguments and 
-    returns the largest of them.
+    Define a function max_of_three()that takes three numbers as arguments.
+    Parameters: the real numbers
+    Return: the largest of the three numbers. 
+    if two or three of the numbers are the same and that number is the largest, it will print that one.
     """
     if a >= b: 
     #compare a and b firstly
@@ -63,6 +67,8 @@ print_max_of_three(3,5,7)
 def length(a):
     """
     Define a function that computes the length of a given list or string.
+    Parameters: text, not including spaces
+    Return: an integer containing the number of letters of a given list or string
     """
     l = 0 #initialize l
     for x in a:#use for loop
@@ -77,6 +83,8 @@ length('hello')
 def vowel(a):
     """
     Write a function that takes a character
+    Parameters: a single character must be entered, otherwise it gives False
+    Return: True if a single vowel, false otherwise
     """
     if a == 'a' or a == 'e' or a == 'i' or a == 'o' or a == 'u': 
     #define a variable used to store vowel
@@ -92,6 +100,8 @@ vowel('b')
 def translate(text):
     """
     Write a function translate()that will translate a text into "rövarspråket"
+    Parameters: a string
+    Return: the initial language translated into the "robber's language" 
     """
     consonants = 'bcdfghjklmnpqrstvwxz' 
     #define a variable used to store final result
